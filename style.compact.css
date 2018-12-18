@@ -103,8 +103,8 @@ h2, h3 { margin: 0; }
   100% { box-shadow: 15px 5px 0 0 #332e2e; } }
 
 @keyframes leftEye { 40% { width: 15px;
-  height: 8px;
-  left: 41px; }
+    height: 8px;
+    left: 41px; }
   50% { width: 12px;
     height: 8px;
     border-top-right-radius: 50%;
@@ -112,25 +112,25 @@ h2, h3 { margin: 0; }
     border-bottom-left-radius: 90%;
     border-top-left-radius: 90%;
     left: 42px; }
-  60% { width: 11px;
-  height: 10px;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 90%;
-  border-top-left-radius: 90%;
-  left: 43px; }
-70% { width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  left: 44px; }
-100% { width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  left: 45px; } }
+    60% { width: 11px;
+    height: 10px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 43px; }
+  70% { width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 44px; }
+  100% { width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 45px; } }
 
 @keyframes rightEye { 40% { width: 15px;
-  height: 8px;
-  left: 92px; }
+    height: 8px;
+    left: 92px; }
   50% { width: 12px;
     height: 8px;
     border-top-right-radius: 50%;
@@ -138,20 +138,20 @@ h2, h3 { margin: 0; }
     border-bottom-left-radius: 90%;
     border-top-left-radius: 90%;
     left: 93px; }
-  60% { width: 11px;
-  height: 10px;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 90%;
-  border-top-left-radius: 90%;
-  left: 94px; }
-70% { width: 12px;
-  height: 12px;
-  border-radius: 50%; }
-100% { width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  left: 95px; } }
+    60% { width: 11px;
+    height: 10px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 94px; }
+  70% { width: 12px;
+    height: 12px;
+    border-radius: 50%; }
+  100% { width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 95px; } }
 
 button { display: none; }
 
