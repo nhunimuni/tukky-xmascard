@@ -1,29 +1,21 @@
-(function() {
-  function $(id) {
-    return document.getElementById(id);
-  }
+window.addEventListener("DOMContentLoaded", init, false);
 
-  var card = $('card'),
-      openB = $('open'),
-      closeB = $('close'),
-      timer = null;
-  console.log('wat', card);
-  openB.addEventListener('click', function () {
-    card.setAttribute('class', 'open-half');
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(function () {
-      card.setAttribute('class', 'open-fully');
-      timer = null;
-    }, 1000);
-  });
+function init() {
+    var button = document.getElementsByTagName("button");
+    console.log(button);
 
-  closeB.addEventListener('click', function () {
-    card.setAttribute('class', 'close-half');
-    if (timer) clearTimerout(timer);
-    timer = setTimeout(function () {
-      card.setAttribute('class', '');
-      timer = null;
-    }, 1000);
-  });
+    var isTurned = true;
 
-}());
+    button[0].addEventListener("click", function () {
+        var inner = document.getElementsByClassName("flip-card-inner");
+        if (isTurned) {
+            inner[0].style.transform = "rotateY(180deg)";
+            isTurned = false;
+            console.log("back");
+        } else {
+            inner[0].style.transform = "rotateY(0deg)";
+            isTurned = true;
+            console.log("front");
+        }
+    });
+}
