@@ -160,22 +160,22 @@ h2, h3 {
 
 @keyframes jump {
   20%{
-	transform: translateY(0);
+    transform: translateY(0);
   }
   40%{
-	transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   50%{
-	transform: translateY(-25px);
+    transform: translateY(-25px);
   }
   60%{
-	transform: translateY(-15px);
+    transform: translateY(-15px);
   }
   80%{
-	transform: translateY(0);
+    transform: translateY(0);
   }
   100%{
-	transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -225,107 +225,107 @@ $img-size: 35%;
       height: auto;
     }
 
-      .brow {
-        width: 25px;
-      }
-
-      .left {
-        position: absolute;
-        top: 110px;
-        left: 37px;
-        animation: leftEyebrow 1.5s linear infinite;
-      }
-
-      .right {
-        position: absolute;
-        top: 114px;
-        left: 88px;
-        animation: rightEyebrow 1.5s linear infinite;
-      }
-
-      .lefteye {
-        position: absolute;
-        top: 138px;
-        left: 41px;
-
-        width: 15px;
-        height: 5px;
-
-        border-top-right-radius: 80%;
-        border-bottom-right-radius: 80%;
-        border-bottom-left-radius: 95%;
-        border-top-left-radius: 95%;
-
-
-        background-color: rgb(51, 46, 46);
-
-        transform: rotate(12deg);
-
-        animation: leftEye 1.5s linear infinite;
-      }
-
-      .righteye {
-        position: absolute;
-        top: 140px;
-        left: 92px;
-
-        width: 15px;
-        height: 5px;
-
-        border-top-left-radius: 80%;
-        border-bottom-left-radius: 80%;
-        border-bottom-right-radius: 95%;
-        border-top-right-radius: 95%;
-
-
-        background-color: rgb(51, 46, 46);
-
-        transform: rotate(-12deg);
-        animation: rightEye 1.5s linear infinite;
-      }
-
-      .mouth {
-        position: absolute;
-        top: 148px;
-        left: 61px;
-
-        width: 20px;
-        height: 20px;
-
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-top-right-radius: 50%;
-        box-shadow: 15px 10px 0 0 rgb(51, 46, 46);
-
-        transform: rotate(40deg);
-
-        animation: mouth 1.5s linear infinite;
-      }
-
-      .blush {
-        width: 12px;
-        filter: saturate(2);
-      }
-
-      .b-left {
-        position: absolute;
-        top: 160px;
-        left: 40px;
-        animation: blush 1.5s linear infinite alternate;
-      }
-
-      .b-right {
-        position: absolute;
-        top: 162px;
-        left: 105px;
-        animation: blush 1.5s linear infinite alternate-reverse;
-      }
+    .brow {
+      width: 25px;
     }
+
+    .left {
+      position: absolute;
+      top: 110px;
+      left: 37px;
+      animation: leftEyebrow 1.5s linear infinite;
+    }
+
+    .right {
+      position: absolute;
+      top: 114px;
+      left: 88px;
+      animation: rightEyebrow 1.5s linear infinite;
+    }
+
+    .lefteye {
+      position: absolute;
+      top: 138px;
+      left: 41px;
+
+      width: 15px;
+      height: 5px;
+
+      border-top-right-radius: 80%;
+      border-bottom-right-radius: 80%;
+      border-bottom-left-radius: 95%;
+      border-top-left-radius: 95%;
+
+
+      background-color: rgb(51, 46, 46);
+
+      transform: rotate(12deg);
+
+      animation: leftEye 1.5s linear infinite;
+    }
+
+    .righteye {
+      position: absolute;
+      top: 140px;
+      left: 92px;
+
+      width: 15px;
+      height: 5px;
+
+      border-top-left-radius: 80%;
+      border-bottom-left-radius: 80%;
+      border-bottom-right-radius: 95%;
+      border-top-right-radius: 95%;
+
+
+      background-color: rgb(51, 46, 46);
+
+      transform: rotate(-12deg);
+      animation: rightEye 1.5s linear infinite;
+    }
+
+    .mouth {
+      position: absolute;
+      top: 148px;
+      left: 61px;
+
+      width: 20px;
+      height: 20px;
+
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-right-radius: 50%;
+      box-shadow: 15px 10px 0 0 rgb(51, 46, 46);
+
+      transform: rotate(40deg);
+
+      animation: mouth 1.5s linear infinite;
+    }
+
+    .blush {
+      width: 12px;
+      filter: saturate(2);
+    }
+
+    .b-left {
+      position: absolute;
+      top: 160px;
+      left: 40px;
+      animation: blush 1.5s linear infinite alternate;
+    }
+
+    .b-right {
+      position: absolute;
+      top: 162px;
+      left: 105px;
+      animation: blush 1.5s linear infinite alternate-reverse;
+    }
+  }
 }
 
 @keyframes head {
   0% {
-      transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   25%{
     transform: rotate(-5deg);
@@ -387,28 +387,28 @@ $img-size: 35%;
     border-top-left-radius: 90%;
     left: 42px;
   } 
-  60% {
-    width: 11px;
-    height: 10px;
+60% {
+  width: 11px;
+  height: 10px;
 
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 90%;
-    border-top-left-radius: 90%;
-    left: 43px;
- }
-  70% {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 90%;
+  left: 43px;
+}
+70% {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     left: 44px;
   }
-  100% {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 45px;
-  }
+100% {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     left: 45px;
+   }
 }
 
 @keyframes rightEye{
@@ -428,36 +428,36 @@ $img-size: 35%;
     left: 93px;
 
   } 
-  60% {
-    width: 11px;
-    height: 10px;
+60% {
+  width: 11px;
+  height: 10px;
 
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 90%;
-    border-top-left-radius: 90%;
-    left: 94px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 90%;
+  left: 94px;
 
- }
-  70% {
+}
+70% {
     width: 12px;
     height: 12px;
     border-radius: 50%;
 
   }
-  100% {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 95px;
-  }
+100% {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     left: 95px;
+   }
 }
 
 @media screen and (max-width: 425px) {
   .flip-card {
     background-color: transparent;
-    width: 350px;
-    height: 500px;
+    width: 320px;
+    height: 480px;
 
     margin: -250px 0 0 -175px;
   }

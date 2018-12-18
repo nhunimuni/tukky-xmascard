@@ -103,8 +103,8 @@ h2, h3 { margin: 0; }
   100% { box-shadow: 15px 5px 0 0 #332e2e; } }
 
 @keyframes leftEye { 40% { width: 15px;
-    height: 8px;
-    left: 41px; }
+  height: 8px;
+  left: 41px; }
   50% { width: 12px;
     height: 8px;
     border-top-right-radius: 50%;
@@ -112,25 +112,25 @@ h2, h3 { margin: 0; }
     border-bottom-left-radius: 90%;
     border-top-left-radius: 90%;
     left: 42px; }
-    60% { width: 11px;
-    height: 10px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 90%;
-    border-top-left-radius: 90%;
-    left: 43px; }
-  70% { width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 44px; }
-  100% { width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 45px; } }
+  60% { width: 11px;
+  height: 10px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 90%;
+  left: 43px; }
+70% { width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 44px; }
+100% { width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 45px; } }
 
 @keyframes rightEye { 40% { width: 15px;
-    height: 8px;
-    left: 92px; }
+  height: 8px;
+  left: 92px; }
   50% { width: 12px;
     height: 8px;
     border-top-right-radius: 50%;
@@ -138,22 +138,22 @@ h2, h3 { margin: 0; }
     border-bottom-left-radius: 90%;
     border-top-left-radius: 90%;
     left: 93px; }
-    60% { width: 11px;
-    height: 10px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 90%;
-    border-top-left-radius: 90%;
-    left: 94px; }
-  70% { width: 12px;
-    height: 12px;
-    border-radius: 50%; }
-  100% { width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 95px; } }
+  60% { width: 11px;
+  height: 10px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 90%;
+  border-top-left-radius: 90%;
+  left: 94px; }
+70% { width: 12px;
+  height: 12px;
+  border-radius: 50%; }
+100% { width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 95px; } }
 
-@media screen and (max-width: 425px) { .flip-card { background-color: transparent; width: 350px; height: 500px; margin: -250px 0 0 -175px; }
+@media screen and (max-width: 425px) { .flip-card { background-color: transparent; width: 320px; height: 480px; margin: -250px 0 0 -175px; }
   .flip-card-front { background-image: url("https://image.flaticon.com/icons/svg/621/621873.svg"); background-repeat: no-repeat; background-position: bottom; padding: 30px 0 10px 62px; }
   h2:first-of-type { font-size: 42px; }
   h3:first-of-type { position: absolute; right: 40px; top: 45px; }
