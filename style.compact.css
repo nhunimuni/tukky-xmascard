@@ -153,10 +153,15 @@ h2, h3 { margin: 0; }
   border-radius: 50%;
   left: 95px; } }
 
-@media screen and (max-width: 425px) { .flip-card { background-color: transparent; width: 320px; height: 480px; margin: -250px 0 0 -175px; }
+button { display: none; }
+
+button img { width: 40px; padding-top: 2px; }
+
+@media screen and (max-width: 425px) { .flip-card { background-color: transparent; width: 320px; height: 480px; margin: -240px 0 0 -160px; }
   .flip-card-front { background-image: url("https://image.flaticon.com/icons/svg/621/621873.svg"); background-repeat: no-repeat; background-position: bottom; padding: 30px 0 10px 62px; }
   h2:first-of-type { font-size: 42px; }
   h3:first-of-type { position: absolute; right: 40px; top: 45px; }
   h3:last-of-type { position: absolute; right: 81px; top: 65px; }
   .wrapper { width: 200px; height: 500px; position: absolute; right: 55px; top: 180px; }
-  .flip-card-back p { margin-bottom: 270px; } }
+  .flip-card-back p { margin-bottom: 270px; }
+  button { display: block; position: absolute; bottom: 5px; right: 5px; padding: .1em; border: none; border-radius: 50%; } }

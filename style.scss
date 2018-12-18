@@ -453,13 +453,23 @@ $img-size: 35%;
    }
 }
 
+
+button {
+  display: none;
+
+  img {
+    width: 40px;
+    padding-top: 2px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .flip-card {
     background-color: transparent;
     width: 320px;
     height: 480px;
 
-    margin: -250px 0 0 -175px;
+    margin: -240px 0 0 -160px;
   }
 
   .flip-card-front {
@@ -496,4 +506,15 @@ $img-size: 35%;
   .flip-card-back p {
     margin-bottom: 270px;
   }
+
+  button {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: .1em;
+    border: none;
+    border-radius: 50%;
+  }
+
 }
