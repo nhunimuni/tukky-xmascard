@@ -1,0 +1,454 @@
+$bg-color: rgb(199, 59, 59);
+$front-color: rgb(44, 82, 52);
+$front-font-color: rgb(255, 255, 255);
+$back-color: rgb(251, 236, 129);
+$back-font-color: rgb(199, 59, 59);
+
+@mixin volleBreiteHohe {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: $bg-color;
+  position: relative;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -150px 0 0 -250px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  @include volleBreiteHohe;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  @include volleBreiteHohe;
+  backface-visibility: hidden;
+
+  border-radius: 15px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: url("https://image.flaticon.com/icons/svg/621/621873.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $front-color;
+  color: $front-font-color;
+
+  padding: 30px;
+
+  h2 {
+    font-family: 'Zeyada', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0 0 5px 40px;
+  }
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $back-color;
+  box-shadow: 0px 0px 50px 8px rgb(220, 224, 136);
+  color: $back-font-color;
+  transform: rotateY(180deg);
+  position: relative;
+  padding: 50px;
+  padding-top: 40px;
+
+  border: 8px solid transparent;
+  border-image: url("https://image.flaticon.com/icons/svg/837/837555.svg") 50 round;
+
+
+  h2 {
+    font-size: 65px;
+    font-family: 'Zeyada', cursive;
+    font-weight: 400;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+
+  .chickenParade {
+    .chicken {
+      width: 10%;
+      height: auto;
+    }
+
+    .wing1 {
+      position: absolute;
+      left: 0;
+      animation: jump 1s linear 0s infinite normal, movingChicken 10s linear infinite;
+    }
+
+    .wing2 {
+      position: absolute;
+      left: 0;
+      animation: jump 1.5s linear 0s infinite normal, movingChicken 5s linear infinite;
+    }
+
+    .wing3 {
+      position: absolute;
+      left: 0;
+      animation: jump 1.2s linear 0s infinite normal, movingChicken 8s linear infinite;
+    }
+
+    .wing4 {
+      position: absolute;
+      left: 0;
+      animation: jump 0.8s linear 0s infinite normal, movingChicken 7s linear infinite;
+    }
+  }
+}
+
+@keyframes movingChicken {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@keyframes jump {
+  20%{
+	transform: translateY(0);
+  }
+  40%{
+	transform: translateY(-30px);
+  }
+  50%{
+	transform: translateY(-25px);
+  }
+  60%{
+	transform: translateY(-15px);
+  }
+  80%{
+	transform: translateY(0);
+  }
+  100%{
+	transform: translateY(0);
+  }
+}
+
+/*---*/
+
+$img-size: 35%;
+
+
+@keyframes leftEyebrow {
+  40% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes rightEyebrow {
+  40% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.wrapper {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+
+  .head {
+    width: 174.297px;
+    height: auto;
+    animation: head 5s linear infinite;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+      .brow {
+        width: 25px;
+      }
+
+      .left {
+        position: absolute;
+        top: 110px;
+        left: 37px;
+        animation: leftEyebrow 1.5s linear infinite;
+      }
+
+      .right {
+        position: absolute;
+        top: 114px;
+        left: 88px;
+        animation: rightEyebrow 1.5s linear infinite;
+      }
+
+      .lefteye {
+        position: absolute;
+        top: 138px;
+        left: 41px;
+
+        width: 15px;
+        height: 5px;
+
+        border-top-right-radius: 80%;
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 95%;
+        border-top-left-radius: 95%;
+
+
+        background-color: rgb(51, 46, 46);
+
+        transform: rotate(12deg);
+
+        animation: leftEye 1.5s linear infinite;
+      }
+
+      .righteye {
+        position: absolute;
+        top: 140px;
+        left: 92px;
+
+        width: 15px;
+        height: 5px;
+
+        border-top-left-radius: 80%;
+        border-bottom-left-radius: 80%;
+        border-bottom-right-radius: 95%;
+        border-top-right-radius: 95%;
+
+
+        background-color: rgb(51, 46, 46);
+
+        transform: rotate(-12deg);
+        animation: rightEye 1.5s linear infinite;
+      }
+
+      .mouth {
+        position: absolute;
+        top: 148px;
+        left: 61px;
+
+        width: 20px;
+        height: 20px;
+
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        box-shadow: 15px 10px 0 0 rgb(51, 46, 46);
+
+        transform: rotate(40deg);
+
+        animation: mouth 1.5s linear infinite;
+      }
+
+      .blush {
+        width: 12px;
+        filter: saturate(2);
+      }
+
+      .b-left {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+        animation: blush 1.5s linear infinite alternate;
+      }
+
+      .b-right {
+        position: absolute;
+        top: 162px;
+        left: 105px;
+        animation: blush 1.5s linear infinite alternate-reverse;
+      }
+    }
+}
+
+@keyframes head {
+  0% {
+      transform: rotate(5deg);
+  }
+  25%{
+    transform: rotate(-5deg);
+  }
+  50%{
+    transform: rotate(5deg);
+  }
+  75%{
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes blush {
+  0%{
+    transform: rotate(10deg);
+  }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+@keyframes mouth {
+  40% {
+    box-shadow: 15px 10px 0 0 rgb(51, 46, 46);
+  }
+  70% {
+    box-shadow: 15px 5px 0 0 rgb(51, 46, 46);
+  }
+  100% {
+    box-shadow: 15px 5px 0 0 rgb(51, 46, 46);
+  }
+}
+
+@keyframes leftEye{
+  40% {
+    width: 15px;
+    height: 8px;
+    left: 41px;
+  }
+  50% {
+    width: 12px;
+    height: 8px;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 42px;
+  } 
+  60% {
+    width: 11px;
+    height: 10px;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 43px;
+ }
+  70% {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 44px;
+  }
+  100% {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 45px;
+  }
+}
+
+@keyframes rightEye{
+  40% {
+    width: 15px;
+    height: 8px;
+    left: 92px;
+  }
+  50% {
+    width: 12px;
+    height: 8px;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 93px;
+
+  } 
+  60% {
+    width: 11px;
+    height: 10px;
+
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-left-radius: 90%;
+    left: 94px;
+
+ }
+  70% {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+  }
+  100% {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 95px;
+  }
+}
