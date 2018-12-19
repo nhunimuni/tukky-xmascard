@@ -29,9 +29,9 @@ h2, h3 { margin: 0; }
 /* Style the back side */
 .flip-card-back { background-color: #fbec81; box-shadow: 0px 0px 50px 8px #dce088; color: #c73b3b; transform: rotateY(180deg); position: relative; padding: 50px; padding-top: 40px; border: 8px solid transparent; border-image: url("https://image.flaticon.com/icons/svg/837/837555.svg") 50 round; }
 
-.flip-card-back h2 { font-size: 65px; font-family: 'Zeyada', cursive; font-weight: 400; }
+.flip-card-back h2 { font-size: 50px; font-family: 'Zeyada', cursive; font-weight: 400; }
 
-.flip-card-back p { font-family: 'Roboto', sans-serif; font-weight: 300; margin: 0; margin-bottom: 35px; font-size: 18px; }
+.flip-card-back p { font-family: 'Roboto', sans-serif; font-weight: 300; margin: 0; margin-bottom: 50px; font-size: 18px; }
 
 .flip-card-back .chickenParade .chicken { width: 10%; height: auto; }
 
